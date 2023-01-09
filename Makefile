@@ -4,13 +4,14 @@ build-native:
 build:
 	cargo build
 
-build-prod:
-	cargo build --release
+build-lib:
+	cargo build-wasi --release # build wasm32-wasi target binary
+	cargo build-wasm32 --release # build wasm32-unknown-unknown target binary
 
-run: # similar to ./target/debug/hello_rust
+run:
 	cargo run
 
-run-prod: # similar to ./target/release/hello_rust
+run-prod:
 	cargo run --release
 
 test:
