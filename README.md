@@ -4,7 +4,20 @@
 
 ## Get started
 
-- WIP
+```bash
+cargo test
+```
+
+## Build WASM
+
+```bash
+make build-lib
+```
+
+## Publish
+
+-   via GitHub Action
+    -   Setup secrets.NPM_TOKEN on GitHub Action's secret menu
 
 ## License
 
