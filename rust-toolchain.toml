@@ -1,0 +1,5 @@
+[toolchain]
+# https://github.com/swc-project/swc/issues/6807
+channel = "1.66.0"
+targets = [ "wasm32-wasi", "wasm32-unknown-unknown" ]
+profile = "minimal"
